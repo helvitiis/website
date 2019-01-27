@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|VT323|Press+Start+2P');
+html{
+    font-size: 150%;
+}
+
+.custom{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
+}
+
+html{
+    background-image: url(repeatbg.png);
+    background-repeat: repeat;
+}
+div.box{
+    border: solid 3px #34f7f1;
+    border-style: groove;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    margin: auto;
+}
+.container{
+    width: 75%;
+    height: 200px;
+    margin: auto;
+}
+#header{
+    width: 100%;
+}
+body{
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+h2{
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+}
+h3{
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+}
+p{
+    font-family: 'Orbitron', monospace;
+    text-align: left;
+    font-size: 20px;
+}
+li{
+    font-size: 110%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+}
+img.discicon{
+    justify-content: center;
+    width: 115px;
+    height: 115px;
+}
+#spacer{
+    width: 100%;
+}

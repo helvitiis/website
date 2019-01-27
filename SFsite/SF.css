@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+p{
+    color: #ef3a10;
+    font-size: 14pt;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 200%;
+    text-align: justify;
+}
+a{
+    color: white;
+}
+h2{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+li{
+    color: #ef3a10;
+    font-size: 14pt;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 200%;
+    text-align: justify;
+}
+hr{
+    color: #ef3a10;
+}
+div.body{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.center{
+    display: block;
+    margin: 0 auto;
+}
+div.titleImage{
+    text-align: center;
+}
+img.title{
+    width: 90%;
+    height: 90%;
+}
+div.license{
+    color: #ef3a10;
+    text-align: center;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt;
+}

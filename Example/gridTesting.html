@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Testing</title>
+        <link rel="stylesheet" type="text/css" href="gridTesting.css" />
+    </head>
+    <body>
+        <h1>This is an example of Grid vs Flexbox CSS.</h1>
+        <div class="full-container">
+            <div class="text">
+                <h2>This is a grid using Grid CSS.</h2>
+            </div>
+            <div class="wrapperGrid">
+                <div class="box a">A</div>
+                <div class="box b">B</div>
+                <div class="box c">C</div>
+                <div class="box d">D</div>
+                <div class="box e">E</div>
+                <div class="box f">F</div>
+            </div>
+            <div class="text">
+                <h2>This is a grid using Flexbox CSS.</h2>
+            </div>
+            <div class="wrapperFlex">
+                <div class="firstRow">
+                    <div class="flex">A</div>
+                    <div class="flex">B</div>
+                    <div class="flex">C</div>
+                </div>
+                <div class="secondRow">
+                    <div class="flex">D</div>
+                    <div class="flex">E</div>
+                    <div class="flex">F</div>
+                </div>
+            </div>
+        </div>
+        <div class="full-container">
+            <div class="csstext">
+                <pre>
+            body{
+    margin: 40px;
+}
+h1{
+    text-align: center;
+}
+
+.wrapperGrid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.box{
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+        </pre>
+            </div>
+            <div class="csstext"></div>
+            <div class="csstext">
+                <pre>
+            .wrapperFlex{
+    display: flex;
+    padding: 20px 0;
+}
+.firstRow{
+    justify-content: space-between;
+}
+.secondRow{
+    justify-content: space-between;
+}
+.flex{
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+}
+        </pre>
+            </div>
+        </div>
+    </body>
+</html>

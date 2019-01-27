@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="CI.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CI Explanation and Tutorial</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <br />
+            <p><span style="font-size: 80px;line-height: 1.0;text-align: center;">WORKING WITH CI
+                    AND RELATED TOOLS</span></p>
+            <hr />
+            <h1>What is CI?</h1>
+            <p>Continuous Integration or CI allows a project team to record committed changes and
+                run tests over those changed files to make certain their work is considered valid.
+                It protects the project from invalidity or well-formedness errors by giving a
+                particular set of indicators.</p>
+            <p>For example, if a team member pushes an XML file with a well-formedness error, the
+                Continuous Delivery or CD tool will send up a "red flag."</p>
+
+            <h1>Implimenting a CD Tool into a GitHub Project Repo</h1>
+
+            <p>One of the most popular CI tools in use by open-source projects on GitHub is called
+                    <a href="https://github.com/marketplace/travis-ci">Travis CI,</a> free to use as
+                long as your project is open-source. If your project isn't open-source, its base
+                price is a $69 per-month subscription fee good for one project.</p>
+
+            <img src="travisci.png" alt="A picture of TravisCI's implimentation screen." />
+
+            <p>In order to impliment Travis CI into your project's repo, you'll need to scroll down
+                on the GitHub Marketplace app page until you see this:</p>
+
+            <img src="travciprice.png" alt="A picture of TravisCI's buying screen." />
+
+            <p>Click on the green "Install it for free" button, which takes you to a payment screen.
+                Don't worry--you won't need to make any payments or put in any card information!
+                (Unless you are planning on purchasing a subscription fee.) Continue with the
+                "payment processing" window:</p>
+
+            <img src="travcipay.png" alt="A picture of TravisCI's payment screen." />
+
+            <p>You'll want to impliment the tool into the proper repo after this, or you can choose
+                to impliment the tool into all of your repositories. Be careful not to impliment the
+                tool on any repositories that aren't open-source projects, otherwise this will break
+                the terms of use agreement with the free option for Travis CI.</p>
+
+            <p>You should now be taken to a page that looks similar to this:</p>
+
+            <img src="travhome.png" alt="A picture of TravisCI's initial home screen." />
+
+            <p>Now, we're going to take a break from working directly with Travis CI and download
+                another program that will allow us to actually use Travis CI.</p>
+
+            <h1>Downloading ngrok</h1>
+
+            <p>In order to set up Travis CI with our repository, we want to use <a
+                    href="https://ngrok.com">ngrok,</a> a program designed to expose our local host
+                to the Internet. It's important to follow these directions exactly in order to get
+                everything to work properly.</p>
+
+            <img src="ngrokhome.png" alt="A picture of ngrok's download screen." />
+
+            <h2>Working with ngrok</h2>
+
+            <ol>
+                <li>Download ngrok.</li>
+                <li>Unzip the file into the user file. <span style="font-weight:bold;">If on a Mac:
+                        /Users/[username]</span></li>
+                <li>Run the following command in Terminal: <code>./ngrok authtoken 3PB7HriDFtqrBze9ETiht_5fX5qqUDEE4Q5XT2zup7Z</code></li>
+                <li>Run <code>./ngrok help</code> in Terminal.</li>
+                <li>Run <code>./ngrok http 80</code>. You should now see a layout similar to this screen in your Terminal:</li>
+                <img src="ngrokterminal.png" style="height:70%; width:70%;" alt="A picture of ngrok's terminal layout." />
+                <li>Open http://localhost:4040 in your browser. You should see a page similar to this:</li>
+                <img src="displaybrowserngrok.png" style="height:70%; width:70%;" alt="A picture of ngrok's browser layout." />
+            </ol>
+
+            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+            <!--<br />
+            <h2>Mac OS X</h2>
+            <hr />
+            <p>If you're working on a Mac, there are known bugs and quirks including the use of Ctrl
+                (^) instead of Cmd (⌘) in the environment. Make certain to read the instructions on
+                the download page as Mac users will also need to download and install XQuartz <span
+                    style="bold">before</span> installing Inkscape. The download instructions for
+                XQuartz are also on the download page.</p>
+            <h2>Windows</h2>
+            <hr />
+            <p>If you're downloading onto a Windows OS, select "64 bit" and then "Installer in .exe
+                format". You shouldn't need to download or configure anything else like the Mac
+                version.</p>
+            <br />
+            <p>You can learn how to vectorize an already-made graphic with <a
+                    href="http://goinkscape.com/how-to-vectorize-in-inkscape/">this great tutorial
+                    here. It's a quick read and was really helpful.</a></p>
+            <p>If you're aiming to draw your own graphic in Inkscape and export it as SVG, read on
+                with these helpful tutorials I've compiled in one place.</p>
+            <br />
+
+            <h2>Other Helpful Tutorials by <a href="https://tutsplus.com/authors/aaron-nieze">Aaron
+                    Nieze</a>:</h2>
+            <ul>
+                <li><a href="http://goinkscape.com/5-best-tips-for-inkscape-beginners/">Five Best
+                        Tips for Beginners</a></li>
+                <li><a href="http://goinkscape.com/how-to-crop-in-inkscape/">How to Crop in
+                        Inkscape</a></li>
+                <li><a href="http://goinkscape.com/how-to-erase-in-inkscape/">How to Erase in
+                        Inkscape</a></li>
+                <li><a href="http://goinkscape.com/how-to-curve-text-in-inkscape/">How to Curve Text
+                        in Inkscape</a></li>
+                <li><a href="http://goinkscape.com/how-to-merge-layers-in-inkscape/">How to Merge
+                        Layers in Inkscape</a></li>
+            </ul>
+-->
+        </div>
+    </body>
+</html>
